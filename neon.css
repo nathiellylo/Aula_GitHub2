@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: consolas, sans-serif;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    flex-direction: column;
+    background: #b472eb;
+}
+
+a{
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    margin:40px 0;
+    color: #03ef40;
+    font-size:1.5rem;
+    letter-spacing: 4px;
+    text-decoration: none;
+    text-decoration: uppercase;
+    overflow: hidden;
+    transition:0.5;
+    border-radius:15px;
+
+}
+
+
+
+a:nth-child(1){
+filter: hue-rotate(290deg);
+}
+a:nth-child(2){
+    filter: hue-rotate(140deg);
+    }
+    a:nth-child(3){
+        filter: hue-rotate(50deg);
+        }
+        a:nth-child(4){
+            filter: hue-rotate(300deg);
+            }
+    
+    a:hover {
+        background: #03ef40;
+        color: #000;
+        box-shadow: 0 0 5px #03ef40, 0 0 25px #03ef40, 0 0 50px #03ef40, 0 0 200px #03ef40;
+    }
+
+    a span{
+        position:absolute;
+        display:block;
+    }
+
+    a span:nth-child(1){
+        top: 0;
+        left: 0;
+        width:100%;
+        height:2px;
+        background: linear-gradient(90deg,  transparent, #158b63);
+        animation: laser1 1s linear infinite;
+    }
+
+    @keyframes laser1 {
+        0% {
+            left: -100%;
+
+        }
+        50%,
+        100% { left: 100%
+
+        }
+    
+    }
+
+    a span:nth-child(2){
+    top:0;
+    right: 0;
+    width: 2px;
+    height:100%;
+    background: linear-gradient(180deg, transparent, #158b63);
+    animation: laser2 1s linear infinite;
+    animation-delay: 0.25s;
+
+    }
+
+    @keyframes laser2 
+{
+    0%{
+        top: -100%;
+    }
+    50%,
+    100%{
+        top:100%
+    }
+}
+    a span:nth-child(3){
+    bottom:0;
+    right: 0;
+    width: 100%;
+    height:2px;
+    background: linear-gradient(180deg, transparent, #158b63);
+    animation: laser3 1s linear infinite;
+    animation-delay: 0.50s;
+
+    }
+
+    @keyframes laser3 
+{
+    0%{
+        right: -100%;
+    }
+    50%,
+    100%{
+        right:100%
+    }
+}
+    a span:nth-child(4){
+    bottom: 0;
+    left: 0;
+    width: 2px;
+    height:100%;
+    background: linear-gradient(180deg, transparent, #158b63);
+    animation: laser4 1s linear infinite;
+    animation-delay: 0.75s;
+
+    }
+
+    @keyframes laser4
+{
+    0%{
+        bottom: -100%;
+    }
+    50%,
+    100%{
+        bottom:100%
+    }
+}
+
+
+
+
+
+   
